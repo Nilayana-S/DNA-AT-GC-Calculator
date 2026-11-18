@@ -1,6 +1,6 @@
 # DNA Sequence AT/GC Content Calculator 🧬
 
-An interactive command-line Python script designed for researchers and students to calculate the **GC** and **AT content** of DNA sequences. It includes built-in sequence validation, handling for lowercase/uppercase inputs, and quality control (QC) tracking for unknown or ambiguous nucleotides (`N`). <br>
+An interactive command-line Python script designed for researchers and students to calculate the **GC** and **AT content** of DNA sequences. It includes built-in sequence validation, handling for lowercase/uppercase inputs, and tracking for unknown or ambiguous nucleotides (`N`). <br>
 
 > ⚠️ **Important Note:** This script is optimized for short sequences (up to ~1,000 bp). Pure Python loops are not designed to handle massive whole-genome files (like 1M+ bases).
 
@@ -8,7 +8,7 @@ An interactive command-line Python script designed for researchers and students 
 
 * **Flexible Input Sanitization:** Automatically converts sequences to uppercase, strips leading/trailing whitespaces, and removes any embedded spaces.
 * **Efficient Sequence Validation:** Utilizes Python's native **`for...else`** construct to cleanly validate sequence characters (`A`, `T`, `C`, `G`, `N`) without messy flag variables.
-* **Ambiguous Base QC Warnings:** Detects 'N' bases (representing unknown nucleotides from sequencing data), calculates their percentage, and triggers a quality control warning.
+* **Ambiguous Base Detection and Warnings:** Detects 'N' bases (representing unknown nucleotides from sequencing data), calculates their percentage, and triggers a warning that the sequence needs quality control.
 * **Interactive Session Loop:** Allows users to analyze multiple sequences in a single run without restarting the script.
 
 ## 🚀 Getting Started
