@@ -4,6 +4,15 @@ An interactive command-line Python script designed for researchers and students 
 
 > ⚠️ **Important Note:** This script is optimized for short sequences (up to ~1,000 bp). Pure Python loops are not designed to handle massive whole-genome files (like 1M+ bases).
 
+## 💡 Why Calculate AT/GC Content?
+
+* **Melting Temperature (Tm):** GC content directly influences DNA thermal stability. Higher GC-content sequences have stronger hydrogen bonding (three bonds between G-C versus two between A-T), requiring higher melting temperatures during PCR and sequencing.
+* **Primer Design & PCR Optimization:** Knowing the AT/GC ratio is essential for designing effective PCR primers and probes, helping ensure balanced binding efficiency and proper annealing temperatures.
+
+## 🧬 Why Track 'N' Bases?
+
+In genomic sequencing, N represents regions of sequencing uncertainty or low-quality reads. Separately tracking and reporting their percentage helps wet-lab scientists and bioinformaticians assess data quality before downstream analysis.
+
 ## ✨ Features
 
 * **Flexible Input Sanitization:** Automatically converts sequences to uppercase, strips leading/trailing whitespaces, and removes any embedded spaces.
@@ -49,11 +58,6 @@ Thank you for using the DNA GC and AT Content Calculator.
 ## 🛠️ Limitation
 
 Currently, this script is built for localized analysis and only handles short sequences.
-
-## 🧬 Why Track 'N' Bases?
-
-In genomic sequencing, N represents regions of sequencing uncertainty or low-quality reads. Separately tracking and reporting their percentage helps wet-lab scientists and bioinformaticians assess data quality before downstream analysis.
-
 
 ## 📄 License
 
